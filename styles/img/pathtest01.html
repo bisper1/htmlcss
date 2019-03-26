@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>상대 경로 사용하기</title>
+    <style>
+        img {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>현재 위치의 폴더에 있는 이미지 파일 로드</h3>
+        <!-- 현재 위치의 파일을 로드 시 2가지 방법 -->
+        <!-- ./ 를 사용하여 현재 폴더와 파일명을 쓰는 방법 -->
+        <!-- 파일명만 쓰는 방법 -->
+        <img src="./Penguins.jpg" alt="">
+        <br>
+        <img src="Tulips.jpg" alt="">
+    </div>
+
+    <div>
+        <h3>현재 위치보다 상위 폴더에 있는 이미지 파일 로드</h3>
+        <img src="../../Lighthouse.jpg" alt="등대">
+        <br>
+        <img src="../../Desert.jpg" alt="사막">
+    </div>
+
+    <div>
+        <h3>현재 위치보다 상위 폴더의 다른 하위 폴더에 있는 이미지 파일 로드</h3>
+        <img src="../../image/Koala.jpg" alt="코알라">
+        <br>
+        <img src="../../image/Hydrangeas.jpg" alt="수국">
+    </div>
+</body>
+</html>
