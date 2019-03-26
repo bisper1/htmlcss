@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>부트스트랩 테이블 사용하기</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+
+
+</head>
+<body>
+    <!-- 문제 1) 아래 사이트의 게시판을 보고 부트스트랩을 이용하여 테이블을 생성하시오 -->
+    <!-- ps. 총 게시물의 수는 5 ~ 10개 -->
+    <!-- ps. https://gall.dcinside.com/board/lists?id=alopecia  디시 탈모갤 -->
+    <!-- ps. 마우스 위치에 따라서 라인 색 변경, 홀수줄과 짝수줄 색 다르게 표시 -->
+    <div class="container">
+        <table class="table table-hover table-striped table-dark mt-3">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>날짜</th>
+                    <th>조회</th>
+                    <th>추천</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>150107</td>
+                    <td>탈모많이 심한가요?기수판별좀 [1]</td>
+                    <td>11(223.33)</td>
+                    <td>03/21</td>
+                    <td>11</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>150106</td>
+                    <td>시제품 개발중이랍이다</td>
+                    <td>ㅇㅈㄴ(27.162)</td>
+                    <td>03/21</td>
+                    <td>20</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>150105</td>
+                    <td>탈모약먹으니까 웨이트시 중량 떨어지더라 [16]</td>
+                    <td>ㅇㅇ(121.142)</td>
+                    <td>03/21</td>
+                    <td>76</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>150104</td>
+                    <td>현재 심각한 사회 문제.txt</td>
+                    <td>깨어있는요자(221.163)</td>
+                    <td>03/21</td>
+                    <td>25</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>150103</td>
+                    <td>띠밤..23살에 탈모약을 먹게될줄은 몰랐네..</td>
+                    <td>민똘갤로그로 이동합니다.</td>
+                    <td>03/21</td>
+                    <td>24</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
