@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>상대 경로 사용하기</title>
+    <style>
+        /* 경로 */
+        /* 상대 경로 */
+        /* 현재 자신이 있는 위치를 기준으로 하여 파일의 위치를 찾는 방식 */
+        /* 기호는 . 을 사용 */
+        /* . 은 현재 나의 위치 폴더 */
+        /* .. 은 현재 나의 위치 폴더의 한단계 상위 폴더를 뜻함 */
+
+        /* 절대 경로 */
+        /* 최상위 폴더인 ROOT 폴더를 기준으로 하여 파일의 위치를 찾는 방식 */
+        /* window : 각 드라이브의 최상위 위치(c:\ ,d:\) */
+        /* linux, macOS, Unix : 드라이브 개념이 없음, 디렉토리라는 개념을 사용함, 최상위 디렉토를 ROOT 디렉토리 ( / ) */
+        /* 웹 환경 : 각 웹 서버 시스템 마다 최상위 폴더로 지정된 위치가 다름, 환경 설정에 의해서 지정된 폴더(디렉토리)가 최상위 ROOT 폴더(디렉토리) 가 됨 ( / ) */
+        /* root 폴더를 / 라는 기호 표시하고 root 폴더를 기준으로 파일의 위치를 찾는 방식 */
+        /* 각 폴더의 구분은 폴더 명과 /로 구분함 */
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 현재 폴더의 하위폴더 styles > img 안의 이미지 펜귄, 튤립 파일을 로드 -->
+        <img src="./styles/img/Penguins.jpg" alt="펜귄" style="width: 400px; height: 300px">
+        <br>
+        <img src="./styles/img/Tulips.jpg" alt="튤립" style="width: 400px; height: 300px;">
+
+    </div>
+</body>
+</html>

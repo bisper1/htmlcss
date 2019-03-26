@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 속성 2</title>
+
+    <style>
+        /* layout 설정 속성 */
+        /* float 속성 */
+        /* 글자 옆에 있는 이미지(혹은 이미지 옆에 글자)를 만들기 위해서 생긴 속성 */
+        /* float 속성을 사용하면 해당 태그 다음의 태그도 float 속성의 영향을 받음 */
+        /* 좌측, 우측에 태그를 배치하는데 사용함 */
+        /* left, right */
+
+        * {
+            /* 테두리 외각 영역을 0으로 수정 */
+            margin: 0;
+            /* 컨텐츠 영역과 테두리 사이의 영역을 0으로 수정 */
+            padding: 0;
+        }
+
+        li {
+            /* ul 혹은 ol 사용 시 각각의 목록의 스타일 설정하는데 사용 */
+            /* circle, square, disc, none */
+            list-style-type: none;
+        }
+
+        body {
+            font: 12px "Hack";
+            color: #333;
+        }
+
+        h1 {
+            font: bold 42px "Hack";
+            background: #ccc;
+            padding: 10px 100px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            padding: 10px;
+            font-size: 120%;
+        }
+
+        .gallery li {
+            /* 세로 정렬 형태였던 ul을 float 속성을 사용하여 가로 정렬 형태로 변경 */
+            float: left;
+            width: 160px;
+            text-align: center;
+        }
+
+        h2 {
+            font: bold 40px "Hack";
+            width: 120px;
+            height: 100px;
+            margin-left: 20px;
+            padding-top: 10px;
+            color: #ffffff;
+        }
+
+        .tulip h2 { background-color: #c00; }
+        .jebi h2 { background-color: #248; }
+        .hobak h2 { background-color: #f90; }
+        .sunflower h2 { background: #880; }
+        .gallery li p { 
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>나의 아름다운 강산</h1>
+    <div id="container">
+        <p class="intro">사람들이 선호하는 꽃들은 어떤 것들일까...  아마 스스로에게 <strong>자신감을 북돋아 주는</strong> 표정 있는 꽃들일 것이다.</p>
+        <ul class="gallery">
+            <li class="tulip">
+                <h2>튜울립</h2>
+                <p>너무 화려하지 않으며 고귀한 느낌을 가지고 있다.  붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.</p>
+            </li>
+            <li class="jebi">
+                <h2>제비꽃</h2>
+                <p>드물게 푸른색을 띠고 있으며, 작지만 시원해 보이는 어린 꽃이라고 할 수 있다.  여럿이 함께 있을 때 더욱 아름답다.</p>
+            </li>
+            <li class="hobak">
+                <h2>호박꽃</h2>
+                <p>색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우 완숙한 이미지를 풍기는 꽃이다.</p>
+            </li>
+            <li class="sunflower">
+                <h2>해바라기</h2>
+                <p>태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에 속하며 송이가 적아야 제격이다.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

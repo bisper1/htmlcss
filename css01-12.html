@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout 그리기</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li { list-style-type: none; }
+
+        img, fieldset { border: none; }
+        
+        li img, dd img { vertical-align: top; }
+
+        body {
+            background-color: #666666;
+            font: 13px/1.5 "굴림";
+            color: #333333;
+        }
+
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        #header { background-color: #eeeeee; }
+
+        h1 {
+            font: bold 30px "휴먼모음T", Gungseo;
+            color: #cccc00;
+            background-color: #123456;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 strong {
+            font-size: 300%;
+            color: #ffffdd;
+        }
+
+        h1 span { font-size: 150%; }
+
+        h1 em {
+            font-style: normal;
+            font-size: 200%;
+            color: #cccccc;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            background-color: #cccccc;
+        }
+
+        #menu {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 150px;
+            padding: 20px;
+        }
+
+        #menu li { padding: 5px 0; }
+
+        #menu li a { color: #000000; }
+
+        #menu li a:hover {
+            color: #666622;
+            border-bottom: 1px dashed #666622;
+        }
+
+        #content {
+            position: relative;
+            left: 200px;
+            width: 600px;
+            background-color: #ffffff;
+        }
+
+        h2 {
+            padding: 10px 20px;
+            font: bold 25px "궁서", Gungseo;
+            background-color: #880000;
+            color: #eeee00;
+        }
+
+        p {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        #footer { background-color: #aaaaaa; }
+
+        address {
+            font-style: normal;
+            padding: 10px 20px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>
+                <strong>호랑이</strong>를 <span>주제</span>로 한 <em>민화</em>
+            </h1>
+        </div>
+        <div id="container">
+            <ul id="menu">
+                <li><a href="#">그림의 작가</a></li>
+                <li><a href="#">그림의 시대</a></li>
+                <li><a href="#">그림의 재료</a></li>
+                <li><a href="#">그림의 주인공</a></li>
+                <li><a href="#">그림의 활용</a></li>
+            </ul>
+            <div id="content">
+                <h2>승운용호도</h2>
+                <p>흙으로 당신은 청춘이 했던 나는 버리었습니다. 지나고 멀리 릴케 경, 까닭입니다. 가득 없이 새워 흙으로 계절이 하나에 지나가는 계십니다. 별 이웃 하늘에는 다 북간도에 시인의 계십니다.</p>
+                <h2>길상백호</h2>
+                <p>쉬이 지나고 부끄러운 불러 오는 위에 청춘이 이름자를 추억과 까닭입니다. 어머니, 하나 하나에 까닭입니다. 별을 릴케 소학교 나의 하나 했던 계십니다. 시와 프랑시스 이런 이름과, 이국 묻힌 계십니다. 이네들은 책상을 가슴속에 시인의 딴은 이름과 별을 아침이 어머님, 있습니다. 많은 그러나 아름다운 자랑처럼 언덕 별 지나고 까닭입니다. 사람들의 오면 않은 소녀들의 하나에 벌레는 이름과 계십니다. 이런 불러 것은 동경과 있습니다. 어머님, 그리고 어머니, 까닭입니다.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <address>Copyright &copy; Allright Reserved.</address>
+        </div>
+    </div>
+</body>
+</html>

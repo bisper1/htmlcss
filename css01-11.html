@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>position 속성</title>
+    <style>
+        /* position */
+        /* html 태그를 박스 기준으로 위치를 배치하는 속성 */
+        /* static, relative, absolute, fixed */
+        /* 위치 지정 속성 */
+        /* top, left, bottom, right */
+        /* top/left 가 기본값임 */
+        /* top : 양의 정수로 입력 시 상단을 기준으로 해서 아래로 html 태그의 위치를 이동시킴, 음의 정수를 사용 시 반대로 이동 */
+        /* left : 양의 정수로 입력 시 좌측을 기준으로 해서 우측으로 html 태그의 위치를 이동시킴, 음의 정수를 사용 시 반대로 이동 */
+
+        /* 상대 위치 좌표 */
+        /* static : 기본값, 상대 위치 좌표 사용, 앞서 사용된 html 태그가 끝나는 좌표를 기준으로 현재 html 태그를 그리는 방식 */
+        /* relative : 상대 위치 좌표 사용, 앞서 사용된 html 태그가 끝나는 좌표를 기준으로 현재 html 태그를 그리는 방식, 위치 지정 속성을 사용함 */
+
+        /* 절대 위치 좌표 */
+        /* absolute : 절대 위치 좌표 사용, 부모 태그의 시작 지점 좌표를 자신의 시작 지점(0, 0)으로 하여 html 태그를 그리는 방식, 위치 지정 속성을 사용함 */
+        /* html 태그에 position: absolute 을 사용할 경우 해당 태그의 부모 태그는 position: relative 로 설정해야 함 */
+        /* fixed : 절대 위치 좌표 사용, 현재 화면(웹 브라우저의 html 출력 화면)을 기준으로 0,0 에서 시작하여 html 태그를 그리는 방식 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .red {
+            background-color: red;
+            position: relative;
+        }
+
+        .green {
+            background-color: green;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        .blue {
+            background-color: blue;
+            position: relative;
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .orange {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box red"></div>
+        <div class="box green">
+            <div class="box yellow"></div>
+        </div>
+        <div class="box blue"></div>
+        <div class="box orange"></div>
+    </div>
+</body>
+</html>

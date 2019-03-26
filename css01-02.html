@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 2일차</title>
+
+    <style>
+        /* 선택자 : html 문서내에서 특정 html 태그를 선택하기 위한 기호 */
+        /* 전체선택자, 태그선택자, id선택자, class선택자 */
+        /* 후손 선택자, 자손 선택자 */
+        /* 후손 선택자, 자손 선택자로 사용할 수 있는 선택자는 태그 선택자뿐만 아니라 모든 선택자를 다 사용이 가능함 */
+        /* 후손 선택자 : 지정한 태그의 자식 태그들 중 하나를 선택하는 선택자, 단계에 상관없이 선택, 사용 기호는 ' ' 공백문자를 사용 */
+        /* 자손 선택자 : 지정한 태그의 자식 태그들 중 직계 후손을 선택하는 선택자, 지정한 태그의 바로 한단계 아래의 자식태그를 선택, 사용기호는 > 를 사용함 */
+
+        li > p {
+            color: blue;
+        }
+
+        div > p {
+            color: greenyellow;
+        }
+
+        .cls_div01 > p {
+            color: red;
+        }
+
+        #id_div01 h3 {
+            color: cadetblue;
+            background-color: gray;
+        }
+
+        /* 가상 클래스 선택자 */
+        /* link : 다른 웹 페이지로 링크된 글자의 스타일을 변경 */
+        /* visited : 이미 한번 이상 방문한 링크의 스타일을 변경 */
+        /* hover : 링크가 걸린 글자에 마우스를 올렸을 경우 스타일을 변경 */
+        /* active : 링크가 걸린 글자에 마우스 클릭 이벤트가 적용되었을 경우 스타일을 변경 */
+        /* focus : 링크가 걸린 글자에 포커스가 적용되었을 경우 스타일을 변경 */
+        /* a { color : #000000; }
+        a:hover { color: #ff0000; }
+        a:visited { color:lime; }
+        a:active {
+            color:blue;
+            background-color:cornflowerblue;
+            margin: 5px;
+        }
+        a:focus {
+            color: gold;
+            background-color: burlywood;
+            padding: 5px;
+            margin: 10px;
+        } */
+
+        /* 그룹 선택자 */
+        /* 여러가지 선택자를 동시에 선택하는 선택자 */
+        /* 사용 기호는 , 를 사용함 */
+
+        h1, p {
+            border: 1px solid #000000;
+            padding: 5px;
+        }
+
+        /* 종속선택자 */
+        /* 기존의 선택자들을 결합된 형태의 선택자 */
+        p > a {
+            margin: 5px;
+            padding: 5px;
+            color: darkviolet;
+            font-size: 24px;
+        }
+        p.more > a {
+            margin: 5px;
+            padding: 5px;
+            border: 2px dashed burlywood;
+            font-size: 36px;
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><p>7월의 여행지</p></li>
+        <li><p>8월의 여행지</p></li>
+    </ul>
+
+    <div style="background-color: gray;">
+        <div>
+            <p>div안의 div안의 p태그</p>
+            <h3>1번째 div안의 div안의 h3태그</h3>
+        </div>
+    </div>
+
+    <div id="id_div01">
+        <div class="cls_div01">
+            <p>div안의 div안의 2번째 p태그</p>
+            <h3>2번째 div안의 div안의 h3태그</h3>
+        </div>
+    </div>
+
+    <br><hr><br>
+
+    <ul>
+        <li><a href="https://www.daum.net">다음 홈페이지</a></li>
+        <li><a href="https://www.nate.com">네이트 홈페이지</a></li>
+        <li><a href="https://www.naver.com">네이버 홈페이지</a></li>
+    </ul>
+
+    <br><hr><br>
+
+    <h1>웹 표준 퍼블리싱</h1>
+    <p>웹 디자인의 한 분야로 원래 용어는 웹 콘텐츠 UI 디자인이다.</p>
+
+    <br><hr><br>
+
+    <p class="more">1번째 p태그 <a href="http://www.daum.net" target="_blank">다음 홈페이지</a></p>
+    <p>2번째 p태그<a href="http://www.nate.com" target="_blank">네이트 홈페이지</a></p>
+    <p class="more">3번째 p태그</p>
+
+    <br><hr><br>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
